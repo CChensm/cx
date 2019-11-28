@@ -1,0 +1,74 @@
+$primary-color: #815c32;
+$secondary-color:#333;
+h1{
+    font-family: 'Noto Sans Kannada', sans-serif;
+}
+header{
+    background-color:$primary-color;
+    position: relative;
+}
+nav{ 
+    a{
+        color:$secondary-color;
+        display: inline-block;
+        margin:10px;
+
+        &:hover{
+            color:white;
+            background-color: black;
+            line-height: 20px;
+            transition-duration: 1s;
+            -webkit-transition-duration: 1s;
+        }
+    }
+}
+section{
+    text-align: center;
+}
+
+.banner{
+    height: calc(100vh - 100px);
+    // background-image: url("../image/hero-5.jpg");
+   
+}
+.bannerbox{
+    
+    h1{
+        font-size: 5em;
+    }
+    
+}
+
+.bg-img{
+    position: absolute;
+    z-index: -1;
+    width:100vw;
+    
+}
+#about{
+    background-color:white;
+}
+
+.value-item{
+    background-image: url("../image/hero-1.jpg");
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    .opa{
+        margin: 0;
+        padding: 0;
+        border-radius: 2px;
+        background-color: rgba($color: white, $alpha: 0.8);
+    }
+    h3{
+        margin: 10px;
+        padding-top: 30px;
+       
+    }
+    p{
+        padding: 15px;
+        
+    }
+    
+
+}
