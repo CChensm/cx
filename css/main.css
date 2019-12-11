@@ -1,23 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #e9e0cf;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
 h1 {
   font-family: 'Noto Sans Kannada', sans-serif;
+  color: #3F3333;
+}
+
+h3 {
+  color: #3F3333;
 }
 
 header {
-  background-color: #815c32;
+  background-color: #a88462;
   position: relative;
 }
 
 nav a {
-  color: #333;
+  color: #3F3333;
   display: inline-block;
   margin: 10px;
 }
 nav a:hover {
   color: white;
-  background-color: black;
+  background-color: #815c32;
   line-height: 20px;
-  transition-duration: 1s;
-  -webkit-transition-duration: 1s;
+  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
 }
 
 section {
@@ -34,12 +50,19 @@ section {
 
 .bg-img {
   position: absolute;
+  top: 0;
   z-index: -1;
+}
+.bg-img img {
   width: 100vw;
 }
 
 #about {
   background-color: white;
+}
+
+#core-value {
+  margin-top: -100px;
 }
 
 .value-item {
@@ -60,6 +83,14 @@ section {
 }
 .value-item p {
   padding: 15px;
+}
+
+#study .student img {
+  width: 60px;
+}
+
+footer {
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

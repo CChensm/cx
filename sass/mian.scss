@@ -1,7 +1,27 @@
-$primary-color: #815c32;
-$secondary-color:#333;
+$primary-color: #a88462;
+$secondary-color: #815c32;
+$text-color:#3F3333;
+$bg-color:#e9e0cf;
+$black: black;
+$white: white;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    background-color: $bg-color;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+    
 h1{
     font-family: 'Noto Sans Kannada', sans-serif;
+    color: $text-color;
+}
+h3{
+    color:#3F3333;
 }
 header{
     background-color:$primary-color;
@@ -9,27 +29,29 @@ header{
 }
 nav{ 
     a{
-        color:$secondary-color;
+        color:$text-color;
         display: inline-block;
         margin:10px;
 
         &:hover{
             color:white;
-            background-color: black;
+            background-color: $secondary-color;
+            ;
             line-height: 20px;
-            transition-duration: 1s;
-            -webkit-transition-duration: 1s;
+            transition-duration: .5s;
+            -webkit-transition-duration: .5s;
         }
     }
 }
+
 section{
     text-align: center;
 }
 
 .banner{
     height: calc(100vh - 100px);
-    // background-image: url("../image/hero-5.jpg");
-   
+    
+    // overflow:hidden;
 }
 .bannerbox{
     
@@ -38,15 +60,22 @@ section{
     }
     
 }
-
 .bg-img{
     position: absolute;
+    top:0;
     z-index: -1;
+
+    img{
     width:100vw;
+    // height: 100vh;
+    }
     
 }
 #about{
     background-color:white;
+}
+#core-value{
+    margin-top: -100px;
 }
 
 .value-item{
@@ -71,4 +100,15 @@ section{
     }
     
 
+}
+#study{
+    .student{
+        img{
+            width:60px;
+            
+        }
+    }
+}
+footer{
+    color:$white;
 }
