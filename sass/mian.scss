@@ -1,9 +1,9 @@
-$primary-color: #a88462;
+$primary-color: #904E55;
 $secondary-color: #815c32;
 $text-color:#3F3333;
 $bg-color:#e9e0cf;
-$black: black;
-$white: white;
+$dark: #564E58;
+$white:  #f3f7f7;
 
 
 *{
@@ -29,12 +29,12 @@ header{
 }
 nav{ 
     a{
-        color:$text-color;
+        color:$white;
         display: inline-block;
         margin:10px;
 
         &:hover{
-            color:white;
+            color:$white;
             background-color: $secondary-color;
             ;
             line-height: 20px;
@@ -72,23 +72,46 @@ section{
     
 }
 #about{
-    background-color:white;
-}
-#core-value{
+    background-color:$white;
     margin-top: -100px;
 }
-
+#core-value{
+    position: relative;
+}
+// .value-content{
+   
+// }
 .value-item{
-    background-image: url("../image/hero-1.jpg");
-    border-radius: 5px;
-    margin: 5px;
+    // background-image: url("../image/hero-1.jpg");
+    border-radius: 10px;
+    margin-left: 20px;
     padding: 10px;
-    .opa{
-        margin: 0;
-        padding: 0;
-        border-radius: 2px;
-        background-color: rgba($color: white, $alpha: 0.8);
+    height:350px;
+    width: 300px;
+    display: inline-block;
+    position:relative; 
+	transform-style: preserve-3d;  
+	transition:all 1s linear ; 
+    
+    .front{
+        width:100%; height:100%; 
+		position:absolute; 
+        background:$white; 
+        transform: translateZ(0.2px);  
+        .card-img{
+            border-radius: 20px;
+        } 
     }
+    .back{
+        width:100%; height:100%; 
+            position:absolute; 
+            padding-top:20px;
+			background:$primary-color; 
+			transform: rotateY(180deg) ; }
+        }
+    .value-item:hover{  
+		transform: rotateY(-180deg);}
+    
     h3{
         margin: 10px;
         padding-top: 30px;
@@ -98,9 +121,6 @@ section{
         padding: 15px;
         
     }
-    
-
-}
 #study{
     .student{
         img{
@@ -111,4 +131,5 @@ section{
 }
 footer{
     color:$white;
+    background-color: $dark;
 }
